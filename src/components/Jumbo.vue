@@ -89,9 +89,10 @@ export default {
 
             .logoDC img {
                 height: 400px;
+                width: 600px;
                 float: right;
-                overflow: hidden;
-                object-fit: scale-down;
+                object-fit: none;
+                
             }
 
             .sites{
