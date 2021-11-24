@@ -3,6 +3,7 @@
     <HeaderDc/>
     <Content/>
     <Merchandise/>
+    <Jumbo/>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import HeaderDc from './components/HeaderDc.vue';
 import Content from './components/Content.vue';
 import Merchandise from './components/Merchandise.vue';
+import Jumbo from './components/Jumbo.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderDc,
     Content,
-    Merchandise
+    Merchandise,
+    Jumbo
   }
 }
 </script>

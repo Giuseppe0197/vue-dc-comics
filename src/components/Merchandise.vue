@@ -16,31 +16,31 @@ export default {
      return {
         merches: [
             {
-                imgMerch: "../assets/img/buy-comics-digital-comics.png",
+                imgMerch: "assets/img/buy-comics-digital-comics.png",
                 text: "Digital Comics",
                 visuability: false
             },
 
             {
-                imgMerch: "../assets/img/buy-comics-merchandise.png",
+                imgMerch: "assets/img/buy-comics-merchandise.png",
                 text: "DC Merchandise",
                 visuability: true
             },
 
             {
-                imgMerch: "../assets/img/buy-comics-shop-locator.png",
+                imgMerch: "assets/img/buy-comics-shop-locator.png",
                 text: "Subscription",
                 visuability: false
             },
 
             {
-                imgMerch: "../assets/img/buy-comics-subscriptions.png",
+                imgMerch: "assets/img/buy-comics-subscriptions.png",
                 text: "Comic Shop Locator",
                 visuability: false
             },
 
             {
-                imgMerch: "../assets/img/buy-dc-power-visa.svg",
+                imgMerch: "assets/img/buy-dc-power-visa.svg",
                 text: "DC Power Visa",
                 visuability: false
             }
