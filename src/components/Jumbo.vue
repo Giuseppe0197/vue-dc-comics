@@ -59,7 +59,7 @@
 
             <div class="logoDC">
 
-                <img src="assets/img/dc-logo-bg.png" alt="">
+                <img src="../assets/img/dc-logo-bg.png" alt="">
 
             </div>
 
@@ -79,7 +79,7 @@ export default {
 <style scoped lang="scss">
     section {
         height: 400px;
-        background-image: url("../../public/assets/img/footer-bg.jpg");
+        background-image: url("../assets/img/footer-bg.jpg");
         background-repeat: no-repeat;
         background-size: cover;
 

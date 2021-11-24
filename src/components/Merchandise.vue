@@ -2,7 +2,7 @@
   <section>
       <div>
           <ul>
-              <li v-for="merch, i in merches" :key="i"><img :src="merch.imgMerch">{{merch.text}}</li>
+              <li v-for="merch, i in merches" :key="i"><img :src="require(`../assets/img/${merch.imgMerch}`)"/>{{merch.text}}</li>
           </ul>
       </div>
   </section>
@@ -16,31 +16,31 @@ export default {
      return {
         merches: [
             {
-                imgMerch: "assets/img/buy-comics-digital-comics.png",
+                imgMerch: "buy-comics-digital-comics.png",
                 text: "Digital Comics",
                 visuability: false
             },
 
             {
-                imgMerch: "assets/img/buy-comics-merchandise.png",
+                imgMerch: "buy-comics-merchandise.png",
                 text: "DC Merchandise",
-                visuability: true
+                visuability: false
             },
 
             {
-                imgMerch: "assets/img/buy-comics-shop-locator.png",
+                imgMerch: "buy-comics-shop-locator.png",
                 text: "Subscription",
                 visuability: false
             },
 
             {
-                imgMerch: "assets/img/buy-comics-subscriptions.png",
+                imgMerch: "buy-comics-subscriptions.png",
                 text: "Comic Shop Locator",
                 visuability: false
             },
 
             {
-                imgMerch: "assets/img/buy-dc-power-visa.svg",
+                imgMerch: "buy-dc-power-visa.svg",
                 text: "DC Power Visa",
                 visuability: false
             }

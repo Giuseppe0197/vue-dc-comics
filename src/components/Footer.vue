@@ -7,11 +7,11 @@
           
 
           <ul>
-              <li><img src="assets/img/footer-facebook.png" alt=""></li>
-              <li><img src="assets/img/footer-twitter.png" alt=""></li>
-              <li><img src="assets/img/footer-youtube.png" alt=""></li>
-              <li><img src="assets/img/footer-pinterest.png" alt=""></li>
-              <li><img src="assets/img/footer-periscope.png" alt=""></li>
+              <li><img src="../assets/img/footer-facebook.png" alt=""></li>
+              <li><img src="../assets/img/footer-twitter.png" alt=""></li>
+              <li><img src="../assets/img/footer-youtube.png" alt=""></li>
+              <li><img src="../assets/img/footer-pinterest.png" alt=""></li>
+              <li><img src="../assets/img/footer-periscope.png" alt=""></li>
           </ul>
 
           <span>Follow Us</span>

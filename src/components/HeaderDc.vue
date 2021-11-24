@@ -1,7 +1,7 @@
 <template>
   <header>
       <section>
-          <img src="assets/img/dc-logo.png" alt="">
+          <img src="../assets/img/dc-logo.png" alt="">
 
         <ul>
             <li v-for="link, i in links" :key="i" :class="link.visuability === true ? 'active' : ''">{{link.text}}</li>
