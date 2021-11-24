@@ -2,18 +2,21 @@
   <div id="app">
     <HeaderDc/>
     <Content/>
+    <Merchandise/>
   </div>
 </template>
 
 <script>
 import HeaderDc from './components/HeaderDc.vue';
 import Content from './components/Content.vue';
+import Merchandise from './components/Merchandise.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderDc,
-    Content
+    Content,
+    Merchandise
   }
 }
 </script>
