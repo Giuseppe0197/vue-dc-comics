@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <HeaderDc/>
+    <Content/>
   </div>
 </template>
 
 <script>
 import HeaderDc from './components/HeaderDc.vue';
+import Content from './components/Content.vue';
 
 export default {
   name: 'App',
   components: {
-    HeaderDc
+    HeaderDc,
+    Content
   }
 }
 </script>

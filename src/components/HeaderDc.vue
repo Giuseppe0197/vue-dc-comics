@@ -1,10 +1,13 @@
 <template>
   <header>
-      <img src="../assets/img/dc-logo.png" alt="">
+      <section>
+          <img src="../assets/img/dc-logo.png" alt="">
 
-      <ul>
-          <li v-for="link, i in links" :key="i" :class="link.visuability === true ? 'active' : ''">{{link.text}}</li>
-      </ul>
+        <ul>
+            <li v-for="link, i in links" :key="i" :class="link.visuability === true ? 'active' : ''">{{link.text}}</li>
+        </ul>
+      </section>
+      
   </header>
 </template>
 
@@ -74,38 +77,44 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 header {
-    width: 80%;
-    margin: auto;
     height: 145px;
 
-    img {
+    section {
+        width: 80%;
+        margin: auto;
+
+        img {
         float: left;
         margin-top: 30px;
         width: 80px;
-    }
+        }
 
-    ul {
-        float: right;
+        ul {
+            float: right;
 
-        li {
-            display: inline-block;
-            margin: 0 10px;
-            line-height: 140px;
-            text-transform: uppercase;
-            font-size: 12px;
-            font-weight: bold;
+            li {
+                display: inline-block;
+                margin: 0 10px;
+                margin-top: 60px;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: bold;
 
-            &:hover {
-                color: blue;
-                cursor: pointer;
-            }
+                &:hover {
+                    color: blue;
+                    cursor: pointer;
+                }
 
-            &.active{
-                color: blue;
-                border-bottom: 5px solid blue;
+                &.active{
+                    color: blue;
+                    padding-bottom: 66px;
+                    border-bottom: 5px solid blue;
+                }
             }
         }
     }
+
+    
 
     
 }
