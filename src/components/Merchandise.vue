@@ -57,7 +57,7 @@ section{
     height: 140px;
 
     div {
-        width: 75%;
+        width: 80%;
         margin: auto;
 
         img {
@@ -68,6 +68,14 @@ section{
         li {
             display: inline-block;
             margin: 30px;
+            color: white;
+            line-height: 80px;
+
+            img {
+                margin-right: 10px;
+                width: 45px;
+                vertical-align: middle;
+            }
         }
 
         
