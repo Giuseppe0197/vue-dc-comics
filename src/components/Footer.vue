@@ -6,12 +6,16 @@
 
           
 
-          <ul>
+          <!-- <ul>
               <li><img src="../assets/img/footer-facebook.png" alt=""></li>
               <li><img src="../assets/img/footer-twitter.png" alt=""></li>
               <li><img src="../assets/img/footer-youtube.png" alt=""></li>
               <li><img src="../assets/img/footer-pinterest.png" alt=""></li>
               <li><img src="../assets/img/footer-periscope.png" alt=""></li>
+          </ul> -->
+
+          <ul>
+              <li v-for="social, i in footerSocial" :key="i"><img :src="require(`../assets/img/${social.imgFooter}`)"/></li>
           </ul>
 
           <span>Follow Us</span>
@@ -25,6 +29,37 @@
 <script>
 export default {
   name: 'Footer',
+
+  data(){
+     return {
+        footerSocial: [
+            {
+                imgFooter: "footer-facebook.png",
+                visuability: false
+            },
+
+            {
+                imgFooter: "footer-twitter.png",
+                visuability: false
+            },
+
+            {
+                imgFooter: "footer-youtube.png",
+                visuability: false
+            },
+
+            {
+                imgFooter: "footer-pinterest.png",
+                visuability: false
+            },
+
+            {
+                imgFooter: "footer-periscope.png",
+                visuability: false
+            }
+        ]
+    }
+  }
   
 }
 </script>
