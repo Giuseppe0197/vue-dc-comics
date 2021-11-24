@@ -7,49 +7,28 @@
                 <div>
                     <h4>DC Comics</h4>
                     <ul>
-                        <li>Characters</li>
-                        <li>Comics</li>
-                        <li>Movies</li>
-                        <li>TV</li>
-                        <li>Games</li>
-                        <li>Videos</li>
-                        <li>News</li>
+                        <li v-for="comic, i in comics" :key="i">{{comic.text}}</li>
                     </ul>
                 </div>
 
                 <div>
                     <h4>DC</h4>
                     <ul>
-                        <li>Terms Of Use</li>
-                        <li>Privacy Policy (New)</li>
-                        <li>Ad Choices</li>
-                        <li>Advertising</li>
-                        <li>Jobs</li>
-                        <li>Subscriptions</li>
-                        <li>Talent Workshops</li>
-                        <li>CPSC Certificates</li>
-                        <li>Ratings</li>
-                        <li>Shop Help</li>
-                        <li>Contact Us</li>
+                        <li v-for="dc, i in dcCom" :key="i">{{dc.text}}</li>
                     </ul>
                 </div>
 
                 <div>
                     <h4>Sites</h4>
                     <ul>
-                        <li>DC</li>
-                        <li>MAD Magazine</li>
-                        <li>DC Kids</li>
-                        <li>DC Universe</li>
-                        <li>DC Power Visa</li>
+                        <li v-for="site, i in sites" :key="i">{{site.text}}</li>
                     </ul>
                 </div>
 
                 <div>
                     <h4>Shop</h4>
                     <ul>
-                        <li>Shop DC</li>
-                        <li>Shop DC Collectibles</li>
+                        <li v-for="shop, i in shops" :key="i">{{shop.text}}</li>
                     </ul>
                 </div>
 
@@ -71,6 +50,117 @@
 <script>
 export default {
   name: 'Jumbo',
+  data(){
+     return {
+        comics: [
+            {
+                text: "Characters",
+            },
+
+            {
+                text: "Comics",
+            },
+
+            {
+                text: "Movies",
+            },
+
+            {
+                text: "TV",
+            },
+
+            {
+                text: "Games",
+            },
+
+            {
+                text: "Videos",
+            },
+
+            {
+                text: "News",
+            }
+        ],
+
+        dcCom: [
+            {
+                text: "Terms of Use",
+            },
+
+            {
+                text: "Privacy Policy (New)",
+            },
+
+            {
+                text: "Ad Choices",
+            },
+
+            {
+                text: "Advertising",
+            },
+
+            {
+                text: "Jobs",
+            },
+
+            {
+                text: "Subscriptions",
+            },
+
+            {
+                text: "Talent Workshops",
+            },
+
+            {
+                text: "CPSC Certificates",
+            },
+
+            {
+                text: "Ratings",
+            },
+
+            {
+                text: "Shop Help",
+            },
+
+            {
+                text: "Contact Us",
+            }
+
+        ],
+        sites: [
+            {
+                text: "DC",
+            },
+
+            {
+                text: "MAD Magazines",
+            },
+
+            {
+                text: "DC Kids",
+            },
+
+            {
+                text: "DC Universe",
+            },
+
+            {
+                text: "DC Power Visa",
+            }
+        ],
+
+        shops: [
+            {
+                text: "Shop DC",
+            },
+
+            {
+                text: "Shop DC Collectibles",
+            }
+        ]
+     }
+    }
   
 }
 </script>
