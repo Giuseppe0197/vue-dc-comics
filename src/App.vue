@@ -4,6 +4,7 @@
     <Content/>
     <Merchandise/>
     <Jumbo/>
+    <Footer/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import HeaderDc from './components/HeaderDc.vue';
 import Content from './components/Content.vue';
 import Merchandise from './components/Merchandise.vue';
 import Jumbo from './components/Jumbo.vue';
+import Footer from './components/Footer.vue';
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     HeaderDc,
     Content,
     Merchandise,
-    Jumbo
+    Jumbo,
+    Footer
   }
 }
 </script>
