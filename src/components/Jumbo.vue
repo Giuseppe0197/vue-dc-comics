@@ -6,8 +6,13 @@
 
                 <div>
                     <h4>DC Comics</h4>
-                    <ul>
+                    <ul id="comicsUl">
                         <li v-for="comic, i in comics" :key="i">{{comic.text}}</li>
+                    </ul>
+
+                    <h4>Shop</h4>
+                    <ul>
+                        <li v-for="shop, i in shops" :key="i">{{shop.text}}</li>
                     </ul>
                 </div>
 
@@ -24,15 +29,6 @@
                         <li v-for="site, i in sites" :key="i">{{site.text}}</li>
                     </ul>
                 </div>
-
-                <div>
-                    <h4>Shop</h4>
-                    <ul>
-                        <li v-for="shop, i in shops" :key="i">{{shop.text}}</li>
-                    </ul>
-                </div>
-
-                
 
             </div>
 
@@ -195,6 +191,10 @@ export default {
                 div {
                     width: calc(100% / 3 - 10px);
                     margin-right: 10px;
+                }
+
+                #comicsUl {
+                    margin-bottom: 20px;
                 }
 
                 h4 {
